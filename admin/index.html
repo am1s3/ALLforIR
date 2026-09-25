@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Админ — ALLforIR</title>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+<div class="login-page"><div class="login-container">
+<div class="login-header"><a href="/" class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 3.5 4 6v9.5C4 17.5 6 19 8 19.5V21c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1h0v1c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1.5c2-.5 4-2 4-4V6c0-2.5-4-4-8-4z"/></svg></div><div class="logo-text">ALL<span>for</span>IR</div></a></div>
+<div class="login-badge"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z"/></svg>Панель администратора</div>
+<form id="loginForm">
+<div class="form-group"><label class="form-label">Логин</label><input type="text" class="form-input" id="username" placeholder="admin" required></div>
+<div class="form-group"><label class="form-label">Пароль</label><input type="password" class="form-input" id="password" placeholder="••••••••" required></div>
+<button type="submit" class="btn btn-primary btn-lg" style="width:100%">Войти</button>
+</form>
+<div class="login-hint"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>Демо: admin / admin123</div>
+</div></div>
+<div class="toast-container" id="toastContainer"></div>
+<script src="/js/app.js"></script>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var u = document.getElementById('username').value.trim();
+    var p = document.getElementById('password').value;
+    if (u === 'admin' && p === 'admin123') {
+        localStorage.setItem('allforir_admin_session', JSON.stringify({token:'s_'+Date.now(),expires:Date.now()+86400000}));
+        window.location.href = '/admin/dashboard.html';
+    } else {
+        alert('Неверный логин или пароль');
+    }
+});
+var s = localStorage.getItem('allforir_admin_session');
+if (s) { try { var o = JSON.parse(s); if (o.expires > Date.now()) window.location.href = '/admin/dashboard.html'; } catch(e){} }
+</script>
+</body>
+</html>

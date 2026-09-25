@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каталог поездов — ALLforIR</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header"><div class="container header-inner">
+<a href="/" class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 3.5 4 6v9.5C4 17.5 6 19 8 19.5V21c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1h0v1c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1.5c2-.5 4-2 4-4V6c0-2.5-4-4-8-4z"/></svg></div><div class="logo-text">ALL<span>for</span>IR</div></a>
+<nav class="nav">
+<a href="/" class="nav-link"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Главная</a>
+<a href="/catalog.html" class="nav-link active"><svg viewBox="0 0 24 24"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4z"/></svg>Каталог</a>
+<a href="/editor.html" class="nav-link"><svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/></svg>Редактор</a>
+<a href="/admin/" class="nav-link"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/></svg>Админ</a>
+</nav>
+</div></header>
+<section class="catalog"><div class="container">
+<div class="section-header"><h2>Каталог поездов</h2><p>Выбери свой состав</p></div>
+<div class="search-bar"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5z"/></svg><input type="text" id="searchInput" placeholder="Найти поезд..."></div>
+<div class="filters">
+<button class="filter-btn active" data-category="all">Все</button>
+<button class="filter-btn" data-category="steam">Паровозы</button>
+<button class="filter-btn" data-category="diesel">Тепловозы</button>
+<button class="filter-btn" data-category="electric">Электровозы</button>
+<button class="filter-btn" data-category="wagon">Вагоны</button>
+</div>
+<div class="trains-grid" id="trainsGrid"><div class="loader"><div class="loader-spinner"></div></div></div>
+</div></section>
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 ALLforIR</p></div></div></footer>
+<div class="toast-container" id="toastContainer"></div>
+<script src="js/app.js"></script>
+<script src="js/catalog.js"></script>
+</body>
+</html>

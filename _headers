@@ -1,0 +1,20 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=604800
+
+/*.js
+  Cache-Control: public, max-age=604800
+
+/*.json
+  Cache-Control: public, max-age=3600

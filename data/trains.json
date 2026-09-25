@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-09-25T10:00:00Z",
+  "trains": [
+    {"id":"train_001","name":"Паровоз Class A4","description":"Легендарный британский паровоз 1930-х годов","category":"steam","featured":true,"liveries":[{"id":"l1","name":"LNER Garter Blue","author":"RailFan","downloads":342,"date":"2026-01-15"},{"id":"l2","name":"BR Green","author":"SteamLover","downloads":156,"date":"2026-03-10"}],"models":[{"id":"m1","name":"Базовая модель","author":"IR Team","downloads":521,"date":"2026-01-01"}]},
+    {"id":"train_002","name":"ТЭ3","description":"Советский двухсекционный грузовой тепловоз","category":"diesel","featured":true,"liveries":[{"id":"l1","name":"РЖД Стандарт","author":"RuRail","downloads":456,"date":"2026-01-20"}],"models":[{"id":"m1","name":"ТЭ3 Оригинал","author":"ModMaker","downloads":334,"date":"2026-01-10"}]},
+    {"id":"train_003","name":"ВЛ80С","description":"Советский магистральный грузовой электровоз","category":"electric","featured":false,"liveries":[{"id":"l1","name":"РЖД Современный","author":"ElectricFan","downloads":234,"date":"2026-03-05"}],"models":[{"id":"m1","name":"ВЛ80С База","author":"IR Team","downloads":445,"date":"2026-02-01"}]},
+    {"id":"train_004","name":"Big Boy","description":"Крупнейший в мире паровоз Union Pacific","category":"steam","featured":true,"liveries":[{"id":"l1","name":"Union Pacific","author":"USARail","downloads":567,"date":"2026-01-25"}],"models":[{"id":"m1","name":"Big Boy 4000","author":"SteamMaster","downloads":678,"date":"2026-02-10"}]}
+  ]
+}

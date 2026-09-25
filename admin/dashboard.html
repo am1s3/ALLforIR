@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Админ панель — ALLforIR</title>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+<div class="dashboard">
+<aside class="sidebar" id="sidebar">
+<div class="sidebar-header"><a href="/" class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 3.5 4 6v9.5C4 17.5 6 19 8 19.5V21c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1h0v1c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1.5c2-.5 4-2 4-4V6c0-2.5-4-4-8-4z"/></svg></div><div class="logo-text">ALL<span>for</span>IR</div></a></div>
+<nav class="sidebar-nav">
+<a href="#overview" class="sidebar-link active" data-section="overview"><svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>Обзор</a>
+<a href="#trains" class="sidebar-link" data-section="trains"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 3.5 4 6v9.5C4 17.5 6 19 8 19.5V21c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1h0v1c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1.5c2-.5 4-2 4-4V6c0-2.5-4-4-8-4z"/></svg>Поезда</a>
+<a href="#debug" class="sidebar-link" data-section="debug"><svg viewBox="0 0 24 24"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8z"/></svg>Отладка</a>
+</nav>
+<div class="sidebar-footer">
+<div class="sidebar-user"><div class="sidebar-user-avatar">A</div><div class="sidebar-user-info"><div class="sidebar-user-name">Admin</div><div class="sidebar-user-role">Админ</div></div></div>
+<a href="/" class="sidebar-link"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>На сайт</a>
+<button class="sidebar-link" id="logoutBtn"><svg viewBox="0 0 24 24"><path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5z"/></svg>Выйти</button>
+</div>
+</aside>
+<main class="dashboard-main">
+<section class="admin-section active" id="section-overview">
+<div class="dashboard-header"><div class="dashboard-title"><h1>Панель управления</h1><p>Добро пожаловать</p></div><a href="/" class="btn btn-secondary" target="_blank">Открыть сайт</a></div>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card-header"><div class="stat-card-icon orange"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 3.5 4 6v9.5C4 17.5 6 19 8 19.5V21c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1h0v1c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1.5c2-.5 4-2 4-4V6c0-2.5-4-4-8-4z"/></svg></div><span class="stat-card-change">+12%</span></div><div class="stat-card-value">4</div><div class="stat-card-label">Поездов</div></div>
+<div class="stat-card"><div class="stat-card-header"><div class="stat-card-icon blue"><svg viewBox="0 0 24 24"><path d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6z"/></svg></div><span class="stat-card-change">+23%</span></div><div class="stat-card-value">5</div><div class="stat-card-label">Окрасов</div></div>
+<div class="stat-card"><div class="stat-card-header"><div class="stat-card-icon green"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg></div><span class="stat-card-change">+8%</span></div><div class="stat-card-value">4</div><div class="stat-card-label">Моделей</div></div>
+<div class="stat-card"><div class="stat-card-header"><div class="stat-card-icon purple"><svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7z"/></svg></div><span class="stat-card-change">+45%</span></div><div class="stat-card-value">3,892</div><div class="stat-card-label">Скачиваний</div></div>
+</div>
+</section>
+<section class="admin-section" id="section-trains" style="display:none">
+<div class="dashboard-header"><div class="dashboard-title"><h1>Поезда</h1></div><button class="btn btn-primary" id="addTrainBtn">Добавить поезд</button></div>
+<div class="data-table-card"><table class="data-table"><thead><tr><th>Поезд</th><th>Категория</th><th>Окрасов</th><th>Моделей</th><th>Действия</th></tr></thead><tbody id="trainsTableBody"></tbody></table></div>
+</section>
+<section class="admin-section" id="section-debug" style="display:none">
+<div class="dashboard-header"><div class="dashboard-title"><h1>Отладка</h1></div>
+<div><button class="btn btn-secondary" id="runTestsBtn">Запустить тесты</button> <button class="btn btn-danger" id="clearDebugBtn">Очистить</button></div></div>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-card-header"><div class="stat-card-icon green"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div></div><div class="stat-card-value" id="debugPassed">0</div><div class="stat-card-label">Пройдено</div></div>
+<div class="stat-card"><div class="stat-card-header"><div class="stat-card-icon orange"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg></div></div><div class="stat-card-value" id="debugWarnings">0</div><div class="stat-card-label">Предупреждений</div></div>
+<div class="stat-card"><div class="stat-card-header"><div class="stat-card-icon purple"><svg viewBox="0 0 24 24"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8z"/></svg></div></div><div class="stat-card-value" id="debugErrors">0</div><div class="stat-card-label">Ошибок</div></div>
+</div>
+<div class="debug-panel"><h3><svg viewBox="0 0 24 24"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8z"/></svg>Лог</h3><div class="debug-log" id="debugLog"><div class="debug-log-entry"><span class="debug-log-time">[--:--:--]</span><span class="debug-log-info">Система готова</span></div></div></div>
+</section>
+</main>
+</div>
+<div class="toast-container" id="toastContainer"></div>
+<script src="/js/app.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>
