@@ -1,16 +1,19 @@
 # ALLforIR
 
-Платформа для создания, загрузки и обмена окрасами и моделями для мода Immersive Railroading (Minecraft).
+Фан-проект клуба **TRCL** (Texel Railway Club) для сообщества Immersive Railroading.
 
-## Структура
-- `index.html` — Главная
-- `catalog.html` — Каталог поездов
-- `train.html` — Страница поезда
-- `editor.html` — Редактор окрасов
-- `admin/` — Админ-панель
+Сайт для сбора и обмена окрасами и моделями поездов, которые делают участники клуба.
+
+## Telegram
+https://t.me/Texel_railway_club
+
+## Разделы
+- `/` — главная
+- `/catalog.html` — каталог поездов
+- `/editor.html` — редактор окрасов
+- `/admin/` — админ-панель (доступ по прямой ссылке)
 
 ## Деплой
-Cloudflare Pages: https://allforir.pages.dev
+Cloudflare Pages — https://allforir.pages.dev
 
-## Админ
-Логин: `admin` / Пароль: `admin123`
+© 2026 TRCL · Texel Railway Club

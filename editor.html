@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Редактор — ALLforIR</title>
+<title>Редактор окрасов — ALLforIR</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/editor.css">
 </head>
 <body>
 <header class="header"><div class="container header-inner">
-<a href="/" class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 3.5 4 6v9.5C4 17.5 6 19 8 19.5V21c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1h0v1c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1.5c2-.5 4-2 4-4V6c0-2.5-4-4-8-4z"/></svg></div><div class="logo-text">ALL<span>for</span>IR</div></a>
+<a href="/" class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 4 3.5 4 6v9.5C4 17.5 6 19 8 19.5V21c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1h0v1c0 .5.5 1 1 1h2c.5 0 1-.5 1-1v-1.5c2-.5 4-2 4-4V6c0-2.5-4-4-8-4z"/></svg></div><span>ALLforIR</span></a>
 <nav class="nav">
 <a href="/" class="nav-link"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Главная</a>
-<a href="/catalog.html" class="nav-link"><svg viewBox="0 0 24 24"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4z"/></svg>Каталог</a>
+<a href="/catalog.html" class="nav-link"><svg viewBox="0 0 24 24"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4z"/></svg>Каталог</a>
 <a href="/editor.html" class="nav-link active"><svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z"/></svg>Редактор</a>
-<a href="/admin/" class="nav-link"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/></svg>Админ</a>
 </nav>
+<a href="https://t.me/Texel_railway_club" target="_blank" rel="noopener" class="nav-tg"><svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.06-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>Telegram</a>
 </div></header>
+
 <div class="editor-page"><div class="editor-container">
 <div class="toolbar">
 <button class="tool-btn active" data-tool="brush" data-tooltip="Кисть (B)"><svg viewBox="0 0 24 24"><path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/></svg></button>
@@ -43,12 +44,12 @@
 <div class="panel">
 <div class="panel-section"><div class="panel-header"><span class="panel-title">Цвет</span></div>
 <div class="color-picker">
-<div class="color-preview"><div class="color-swatch" id="currentColor"><div class="color-fill" style="background:#ff6b35"></div></div>
-<div class="color-inputs"><input type="text" class="color-hex" id="colorHex" value="#ff6b35"><input type="color" id="colorPicker" value="#ff6b35"></div>
+<div class="color-preview"><div class="color-swatch" id="currentColor"><div class="color-fill" style="background:#e8873a"></div></div>
+<div class="color-inputs"><input type="text" class="color-hex" id="colorHex" value="#e8873a"><input type="color" id="colorPicker" value="#e8873a"></div>
 </div>
 <div class="palette" id="palette"></div>
 </div></div>
-<div class="panel-section"><div class="panel-header"><span class="panel-title">Размер</span></div>
+<div class="panel-section"><div class="panel-header"><span class="panel-title">Размер кисти</span></div>
 <div class="size-control">
 <div class="size-preview"><span>Размер</span><span class="size-value" id="sizeValue">8px</span></div>
 <input type="range" class="size-slider" id="sizeSlider" min="1" max="100" value="8">
